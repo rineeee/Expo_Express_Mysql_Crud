@@ -1,0 +1,29 @@
+@api = http://localhost:3000/tasks
+
+GET {{api}}
+
+###
+GET {{api}}/1
+
+###
+GET {{api}}/count
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title": "i must create a website",
+    "description": "Using wordpress"
+}
+
+###
+DELETE {{api}}/5
+
+###
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "description": "description updated!!!"
+}
